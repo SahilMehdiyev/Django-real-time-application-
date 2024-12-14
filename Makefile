@@ -16,6 +16,11 @@ pre_commit_run:
 install:
 	poetry install
 
+# run_celery_worker:
+# 	celery -A noosh_backend worker --loglevel=info
+# run_celery_beat:
+# 	celery -A noosh_backend beat --loglevel=info
+
 .PHONY: run_server,create_superuser
 .PHONY: run_migrate,run_makemigrations
 .PHONY: install
